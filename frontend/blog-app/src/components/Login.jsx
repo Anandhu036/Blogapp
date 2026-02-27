@@ -24,7 +24,7 @@ const handleSubmit=async(e)=> {
         // const {data} = await axios.post('http://localhost:3000/user/login', {username:inputs.username, password:inputs.password})
         // if(data.success){
         //     alert('User login successfull')
-        axios.post('http://localhost:3000/user/login',inputs) 
+        axios.post('/api/user/login',inputs) 
         .then((response) => {
             alert(response.data.message)
             if(response.data.usertoken){
